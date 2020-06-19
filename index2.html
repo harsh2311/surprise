@@ -42,7 +42,7 @@ width="2" height="0">
 				<canvas id="garden"></canvas>
 				<div id="words">
 					<div id="messages">
-						&emsp; &emsp; &emsp; Vandana, We will be together now.
+						 Vandana, We will be together now.
 					</div>
 					<div id="loveu">
                     	I love you &<br/>
@@ -82,6 +82,7 @@ width="2" height="0">
 			setInterval(function () {
 				timeElapse(together);
 			}, 500);
+		    $("#words").css("display", "none");
 
 			adjustCodePosition();
 			$("#code").typewriter();

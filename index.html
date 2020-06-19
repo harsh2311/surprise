@@ -46,6 +46,7 @@ width="2" height="0">
 				<canvas id="garden"></canvas>
 				<div id="words">
 					<div id="messages">
+						&emsp; &emsp; &emsp; Vandana, We will be together now.
 					</div>
 					<div id="loveu">
                     	I love you &<br/>
@@ -74,6 +75,7 @@ width="2" height="0">
 		    document.execCommand("stop");
 		} else {
 		    $("#words").css("position", "absolute");
+		    $("#words").css("display", "none");
 		    $("#words").css("top", $("#garden").position().top + 195);
 		    $("#words").css("left", $("#garden").position().left + 70)
 			$("#code").typewriter();

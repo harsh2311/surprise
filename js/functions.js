@@ -108,6 +108,7 @@ function timeElapse(c) {
 }
 function showMessages() {
     adjustWordsPosition();
+    $("#messages").css("left", $("#garden").position().left + 500);
     $("#messages").fadeIn(5000, function() {
         showLoveU()
     })
@@ -115,7 +116,8 @@ function showMessages() {
 function adjustWordsPosition() {
     $("#words").css("position", "absolute");
     $("#words").css("top", $("#garden").position().top + 195);
-    $("#words").css("left", $("#garden").position().left + 70)
+    $("#words").css("left", $("#garden").position().left + 70);
+    document.getElementById("words").style.display = "block";
 }
 function adjustCodePosition() {
     $("#code").css("margin-top", ($("#garden").height() - $("#code").height() - $("#code2").height()) / 2)
