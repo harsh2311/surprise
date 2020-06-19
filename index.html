@@ -42,6 +42,18 @@ width="2" height="0">
 				</form> 
 			</p>
 			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+					</div>
+					<div id="loveu">
+                    	I love you &<br/>
+						Love u forever and ever.
+						<div class="signature">- Harsh</div>
+					</div>
+				</div>
+			</div>
 
 		</div>
 		
@@ -61,7 +73,9 @@ width="2" height="0">
 			$("#copyright").css("bottom", "10px");
 		    document.execCommand("stop");
 		} else {
-			document.getElementById("code2").style.display = "none";
+		    $("#words").css("position", "absolute");
+		    $("#words").css("top", $("#garden").position().top + 195);
+		    $("#words").css("left", $("#garden").position().left + 70)
 			$("#code").typewriter();
 		}
 
